@@ -1,4 +1,6 @@
+## Due date 31 Dec 2021 Submission date 05 Jan 2022
 # 1. WAP to demonstrate the use of user defined package in java.
+```
 
 [//]: #packageDemo.java
 
@@ -29,8 +31,10 @@ public class Demo
     }
     
 }
+```
 
 # 2. WAP to demonstrate Exception handling with all 5 keywords: try, catch, finally, throw and throws.
+```
 
 [//]: #TryCatchDemo.java
 
@@ -125,8 +129,11 @@ public class ThrowDemo
 
 	}
 }
+```
+
 
 # 3. Create your own exception class called InvalidAgeException which is thrown if the given age is less than 1 and greater than 100.
+```
 
 [//]: #DemoException.java
 
@@ -155,8 +162,10 @@ public class InvalidAgeException extends Exception
         }
     }
 }
+```
 
 # 4. WAP to demonstrate the use of chained Exception.
+```
 
 [//]: #ChainedException.java
 
@@ -183,9 +192,11 @@ public class ChainedException
         }
     }
 }
+```
 
 # 5. WAP to merge data from two files into third file.
 
+```
 
  [//]: #FileMerge.java
  
@@ -254,8 +265,10 @@ public class MergingFiles
 }
 
 <!--files should be creates as file1.txt file2.txt and file3.txt --!>
+```
 
 # 6. WAP to merge data from all files present in Desktop into output.txt.
+```
 
 [//]: #MergeFromDesktop.java 
  
@@ -286,3 +299,4 @@ class MergeFromDesktop
     }
 } 
 <!-- File should be creates as output.txt -->
+```
