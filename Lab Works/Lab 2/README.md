@@ -4,11 +4,14 @@
 
 package com.gces.pkg;
 
-public class PackageDemo{
-    public void showMessage(){
+public class PackageDemo
+{
+    public void showMessage()
+    {
         System.out.println("Simple package example.");
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         System.out.println("Package is created.");
     }
 }
@@ -17,8 +20,10 @@ public class PackageDemo{
 
 import com.gces.pkg.PackageDemo;
 
-public class Demo {
-    public static void main(String[] args) {
+public class Demo 
+{
+    public static void main(String[] args) 
+    {
         PackageDemo demo = new PackageDemo();
         demo.showMessage();
     }
@@ -29,8 +34,10 @@ public class Demo {
 
 [//]: #TryCatchDemo.java
 
-public class TryCatchDemo {
-    public static void main(String[] args) {
+public class TryCatchDemo 
+{
+    public static void main(String[] args) 
+    {
         int num1 = 30;
         int num2 = 0;
         int result = 0;
@@ -44,8 +51,10 @@ public class TryCatchDemo {
 }
 [//]: #FinallyDemo.java
 
-public class FinallyDemo {
-    public static void main(String[] args) {
+public class FinallyDemo 
+{
+    public static void main(String[] args) 
+    {
         int num1 = 30;
         int num2 = 0;
         int result = 0;
@@ -55,20 +64,24 @@ public class FinallyDemo {
         }catch(ArithmeticException e){
             System.out.println("Error message: "+ e.getMessage());
         }
-        finally{
+        finally
+	{
             System.out.println("In finally all statements are bound to run at least once even if error occurs in try-catch or other Exceptions");
         }
     }
 }
 [//]: #ThrowDemo.java
 
-public class ThrowDemo {
+public class ThrowDemo
+{
     public void eligibility (int age)
 	{
-		if (age < 18) {
+		if (age < 18) 
+		{
 			throw new ArithmeticException("Not eligible to drink or smoke or should not be able to purchase!!");
 		}
-        else{
+        else
+	{
             System.out.println("Enjoy ruining your healthy body!!");
         }
 	}
@@ -77,7 +90,8 @@ public class ThrowDemo {
 		ThrowDemo demo = new ThrowDemo();
 		try {
 			demo.eligibility(17);
-		}catch(ArithmeticException error) {
+		}catch(ArithmeticException error) 
+		{
 			System.out.println("Exception message : "+error.getMessage());
 		}
 
@@ -86,13 +100,16 @@ public class ThrowDemo {
 
 [//]: #ThrowsDemo.java
 
-public class ThrowDemo {
+public class ThrowDemo 
+{
     public void eligibility (int age)
 	{
-		if (age < 18) {
+		if (age < 18) 
+		{
 			throw new ArithmeticException("Not eligible to drink or smoke or should not be able to purchase!!");
 		}
-        else{
+        else
+	{
             System.out.println("Enjoy ruining your healthy body!!");
         }
 	}
@@ -101,7 +118,8 @@ public class ThrowDemo {
 		ThrowDemo demo = new ThrowDemo();
 		try {
 			demo.eligibility(17);
-		}catch(ArithmeticException error) {
+		}catch(ArithmeticException error) 
+		{
 			System.out.println("Exception message : "+error.getMessage());
 		}
 
@@ -112,8 +130,10 @@ public class ThrowDemo {
 
 [//]: #DemoException.java
 
-public class DemoException {
-    public static void main(String[] args) {
+public class DemoException 
+{
+    public static void main(String[] args) 
+    {
         
     }
     
@@ -129,7 +149,8 @@ public class InvalidAgeException extends Exception
     {
         super(message);
         this.value = value;
-        if(value < 1 || value > 100){
+        if(value < 1 || value > 100)
+	{
             message = "Age is not to be lessthan 1 nor exceeds 100";
         }
     }
@@ -139,17 +160,24 @@ public class InvalidAgeException extends Exception
 
 [//]: #ChainedException.java
 
-public class ChainedException {
-    public static void main (String args[])throws Exception { 
+public class ChainedException 
+{
+    public static void main (String args[])throws Exception 
+    { 
         int number = 20, result = 0;
-        try { 
+        try
+	{ 
             result = number/0;
             System.out.println("The result is "+result);
-        } catch(ArithmeticException error1) { 
+        } 
+	catch(ArithmeticException error1) 
+	{ 
             System.out.println ("Arithmetic exception occoured: "+error1);
-            try { 
+            try
+	    { 
                 throw new NumberFormatException();
-            } catch(NumberFormatException error2) {
+            } catch(NumberFormatException error2) 
+	    {
                 System.out.println ("Chained exception thrown manually : "+error2);
             }
         }
@@ -234,7 +262,8 @@ public class MergingFiles
  
 import java.io.*;
 
-class MergeFromDesktop {
+class MergeFromDesktop
+ {
  
     public static void main(String[] args) throws IOException
     {
