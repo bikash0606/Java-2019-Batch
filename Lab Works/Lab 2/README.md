@@ -257,4 +257,4 @@ class MergeFromDesktop {
         " in directory " + dir.getName() + " Completed");
     }
 } 
-<!-- File should be creates as Output.txt -->
+<!-- File should be creates as output.txt -->
