@@ -258,6 +258,7 @@ public class MergingFiles
 6. WAP to merge data from all files present in Desktop into output.txt
 
 
+
 [//]: #MergeFromDesktop.java 
  
 import java.io.*;
