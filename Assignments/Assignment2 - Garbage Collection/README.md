@@ -17,7 +17,10 @@ The gc() method is used to invoke the garbage collector to perform cleanup proce
 Simple Example of Garbage Collection in Java :
 ````
 public class TestGarbage1{ 
-  public void finalize(){ System.out.println("Garbage is collected"); }
+  public void finalize()
+  { 
+  System.out.println("Garbage is collected");
+  }
   public static void main(String args[]){ 
     TestGarbage1 s1=new TestGarbage1(); 
     TestGarbage1 s2=new TestGarbage1(); 
